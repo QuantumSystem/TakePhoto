@@ -1,0 +1,48 @@
+#results {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#results > div {
+  width: 33%;
+  text-align: center;
+  line-height: 24px;
+}
+
+a{
+  text-decoration: none;
+}
+
+.disabled{
+  pointer-events: none; 
+  cursor: default; 
+  text-decoration: none; 
+  color: gray; 
+}
+
+.enable{
+   pointer-events: auto; 
+   cursor: default; 
+   text-decoration: none; 
+   color: #000; 
+}
+
+@media (max-width: 814px) {
+
+  #results {
+    flex-flow: column;
+  }
+  
+  #results > div {
+    width: 100%;
+    margin-bottom: 24px;
+  }
+
+}
+video, canvas {
+  border: 2px solid rgba(255, 255, 255, 1);
+  background: #000;
+  height: 640px;
+  width: 100%;
+}
